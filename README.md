@@ -25,9 +25,8 @@ If that's good enough for you, by all means, use it. Otherwise, read on.
 ### Requirements
 
 - Requires Python 2.7 (`argparse`, `hashlib.pbkdf2_hmac`)
-- Fails on RHEL 7 (use `grub2-mkpasswd-pbkdf2` method above)
 - Tested on Fedora 22: no special packages needed (only standard library [python] modules used)
-- Tested on RHEL 6 with python 2.7 from [RHSCL](https://access.redhat.com/solutions/472793)
+- Tested on RHEL 6 and RHEL 7 with python 2.7 from [RHSCL](https://access.redhat.com/solutions/472793)
     1. Enable the SCL repo (e.g., `subscription-manager repos --enable rhel-server-rhscl-6-rpms`)
     1. Install python 2.7 (i.e., `yum install python27`)
     1. Save `burg2-mkpasswd-pbkdf2` to somewhere in `PATH`
